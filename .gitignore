@@ -1,0 +1,18 @@
+# Environment and secrets (never commit API keys)
+.env
+*.env
+phase4/.env
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# HuggingFace cache
+.cache/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/

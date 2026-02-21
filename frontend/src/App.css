@@ -1,0 +1,180 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.header p {
+  margin: 0;
+  color: #a3a3a3;
+  font-size: 0.95rem;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+  padding: 1.25rem;
+  background: #1a1a1a;
+  border-radius: 10px;
+  border: 1px solid #2a2a2a;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 160px;
+}
+
+.field label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #a3a3a3;
+}
+
+.field input,
+.field select {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.95rem;
+  background: #0f0f0f;
+  border: 1px solid #333;
+  border-radius: 6px;
+  color: #e5e5e5;
+  min-width: 180px;
+}
+
+.field input:focus,
+.field select:focus {
+  outline: none;
+  border-color: #e11d48;
+  box-shadow: 0 0 0 2px rgba(225, 29, 72, 0.2);
+}
+
+.field .hint {
+  color: #737373;
+  font-size: 0.9rem;
+}
+
+.form button {
+  padding: 0.55rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  background: #e11d48;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.form button:hover:not(:disabled) {
+  background: #be123c;
+}
+
+.form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.message {
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.message.error {
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  color: #fca5a5;
+}
+
+.message.empty {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  color: #a3a3a3;
+}
+
+.results {
+  margin-top: 1.5rem;
+}
+
+.results h2 {
+  font-size: 1.15rem;
+  margin: 0 0 1rem;
+  color: #fff;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid #2a2a2a;
+  background: #1a1a1a;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+th,
+td {
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+th {
+  background: #252525;
+  color: #a3a3a3;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+td {
+  color: #e5e5e5;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover td {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+@media (max-width: 768px) {
+  .form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .field input,
+  .field select {
+    min-width: 0;
+  }
+
+  .table-wrap {
+    font-size: 0.8rem;
+  }
+
+  th,
+  td {
+    padding: 0.5rem;
+  }
+}
