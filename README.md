@@ -35,9 +35,7 @@ Traditional food discovery apps overwhelm diners with hundreds of keyword-matche
                                             │
                                             ▼
                   [Web UI: Ranked Picks + Concise Rationale]
-```
 
-*(Tip: Include a screenshot of the web interface showing sample inputs and ranked output cards here!)*
 
 
 ## 4. Product & Engineering Trade-Offs
@@ -58,8 +56,8 @@ pip install -r requirements.txt
 # 3. Set your Groq API key
 export GROQ_API_KEY="your_groq_api_key_here"
 
-# 4. Run the application
-python app.py
+# 4. Launch the streamlit web app
+streamlit run streamlit_app.py
 
 
 ## 6. Metrics & Future Enhancements
